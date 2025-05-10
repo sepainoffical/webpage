@@ -20,8 +20,10 @@
       background: #1e1e1e;
       padding: 15px 30px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
+      align-items: center;
       gap: 20px;
+      z-index: 100;
     }
     nav a {
       color: white;
@@ -30,6 +32,14 @@
     }
     nav a:hover {
       text-decoration: underline;
+    }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+      letter-spacing: 1px;
     }
     h2 {
       font-weight: 600;
@@ -45,25 +55,21 @@
     li {
       margin-bottom: 15px;
     }
-    .pricing-option {
-      margin-top: 20px;
-    }
   </style>
 </head>
 <body>
   <nav>
+    <div class="logo">Sepain</div>
     <a href="index.html">Home</a>
     <a href="dma.html">DMA</a>
     <a href="pricing.html">Pricing</a>
   </nav>
 
   <h2>Pricing</h2>
-  <div class="pricing-option">
-    <ul>
-      <li>30 USD a week</li>
-      <li>75 USD a month</li>
-      <li>250 USD a year</li>
-    </ul>
-  </div>
+  <ul>
+    <li>30 USD a week</li>
+    <li>75 USD a month</li>
+    <li>250 USD a year</li>
+  </ul>
 </body>
 </html>
