@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forum Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      transition: all 0.3s ease;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      background: #2a2a2a;
+      padding: 30px;
+      border-radius: 12px;
+    }
+    input, button {
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #00ffea;
+      color: black;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .toggle {
+      margin-top: 10px;
+      color: #aaa;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form id="authForm">
+    <input type="email" placeholder="Email" required id="email">
+    <input type="password" placeholder="Password" required id="password">
+    <button type="submit">Login</button>
+    <div class="toggle" onclick="toggleForm()">Switch to Register</div>
+  </form>
+
+  <script>
+    let isLogin = true;
+
+    function toggleForm() {
+      const form = document.getElementById('authForm');
+      const button = form.querySelector('button');
+      const toggle = form.querySelector('.toggle');
+
+      isLogin = !isLogin;
+      button.textContent = isLogin ? 'Login' : 'Register';
+      toggle.textContent = isLogin ? 'Switch to Register' : 'Switch to Login';
+    }
+
+    document.getElementById('authForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+      const uid = crypto.randomUUID();  // simulate UID assignment
+      alert((isLogin ? 'Logged in' : 'Registered') + ` with UID: ${uid}`);
+    });
+  </script>
+</body>
+</html>
