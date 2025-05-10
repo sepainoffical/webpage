@@ -2,46 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Fortnite DMA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
+  <title>Fortnite DMA - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background-color: #0a0a0a;
+      padding: 20px;
+      background-color: #121212;
+      color: white;
       font-family: 'Inter', sans-serif;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      color: white;
-      text-shadow: 0 0 20px white, 0 0 40px white;
-      margin-top: 100px;
-    }
-    a.button {
-      padding: 12px 28px;
-      background: white;
-      color: black;
-      font-weight: 600;
-      border-radius: 20px;
-      text-decoration: none;
-      margin-top: 20px;
     }
     nav {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      background: #121212;
+      background: #1e1e1e;
       padding: 15px 30px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
+      align-items: center;
       gap: 20px;
+      z-index: 100;
     }
     nav a {
       color: white;
@@ -51,16 +33,46 @@
     nav a:hover {
       text-decoration: underline;
     }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 3rem;
+      margin-top: 80px;
+      text-align: center;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7);
+    }
+    .button {
+      display: block;
+      margin: 30px auto;
+      padding: 15px 30px;
+      background-color: #28a745;
+      color: white;
+      font-size: 1.25rem;
+      text-align: center;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #218838;
+    }
   </style>
 </head>
 <body>
   <nav>
+    <div class="logo">Sepain</div>
     <a href="index.html">Home</a>
     <a href="dma.html">DMA</a>
-    <a href="forum.html">Forum</a>
+    <a href="pricing.html">Pricing</a>
   </nav>
 
-  <h1>ready to dominate?</h1>
-  <a class="button" href="dma.html">Learn More</a>
+  <h1>Ready to Dominate?</h1>
+  <a href="dma.html" class="button">Learn More</a>
 </body>
 </html>
