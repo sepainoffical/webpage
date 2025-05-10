@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      padding: 60px 40px;
+      padding: 20px;
       background-color: #121212;
       color: white;
       font-family: 'Inter', sans-serif;
@@ -20,8 +20,10 @@
       background: #1e1e1e;
       padding: 15px 30px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
+      align-items: center;
       gap: 20px;
+      z-index: 100;
     }
     nav a {
       color: white;
@@ -31,35 +33,44 @@
     nav a:hover {
       text-decoration: underline;
     }
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+      letter-spacing: 1px;
+    }
     h2 {
       font-weight: 600;
       font-size: 2rem;
       margin-top: 80px;
-      margin-bottom: 20px;
     }
     ul {
       list-style-type: disc;
       margin-left: 25px;
       font-weight: 500;
+      font-size: 1.25rem;
     }
     li {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
   </style>
 </head>
 <body>
   <nav>
+    <div class="logo">Sepain</div>
     <a href="index.html">Home</a>
     <a href="dma.html">DMA</a>
-    <a href="forum.html">Forum</a>
+    <a href="pricing.html">Pricing</a>
   </nav>
 
-  <h2>our flagship software. easy to use, undetected, and support</h2>
+  <h2>Our Flagship Software</h2>
   <ul>
     <li>Compatible with Windows 10 1903+</li>
     <li>Undetected since conception</li>
-    <li>Customizable mouse-based aim assistance</li>
-    <li>Customizable visuals, appealing to any appearance</li>
+    <li>A customizable mouse-based aim assistance</li>
+    <li>Customizable visuals, with appeals to any appearance</li>
     <li>A Discord server with active support</li>
   </ul>
 </body>
